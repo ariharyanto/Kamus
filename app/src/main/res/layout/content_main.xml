@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="55dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+	android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.blek.kamus.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+		<TextView 
+			android:paddingLeft="5sp"
+			android:text="@string/result"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+	<android.support.v7.widget.CardView
+        android:id="@+id/cv_result"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="@dimen/cardview_default_elevation"
+		android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+		
+		<TextView
+			android:id="@+id/txtJawa"
+			android:text=""
+			android:textSize="60sp"
+			android:gravity="center"
+			android:textColor="@color/colorAccent"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"/>
+		
+     </android.support.v7.widget.CardView>
+	 
+	 <TextView 
+		android:text="@string/java"
+		android:paddingLeft="5sp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	
+	 <android.support.v7.widget.CardView
+        android:id="@+id/cv_image"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+		<ImageView
+			android:layout_margin="5dp"
+			android:layout_height="160dp"
+			android:id="@+id/image_action"
+			android:layout_width="match_parent"
+			android:background="?attr/selectableItemBackground"
+			android:src="@mipmap/jawaaa"/>
+			
+     </android.support.v7.widget.CardView>
+		
+	<TextView  
+		android:text="@string/thanks_to"
+		android:layout_marginTop="10dp"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	
+	<TextView  
+		android:text="@string/translator"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	
+	<TextView
+		android:paddingLeft="5sp"
+		android:text="» DanuBradenli"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	
+	<TextView
+		android:paddingLeft="5sp"
+		android:text="» Nailiyatun Nasihah"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	
+	<TextView 
+		android:paddingLeft="5sp"
+		android:text="» Http://www.ndrangsan.com"
+		android:autoLink="web"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	
+	<TextView  
+		android:text="@string/other"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<TextView 
+		android:paddingLeft="5sp"
+		android:text="Kevin Rifo, Dhanu Arfendi, Google, Github, Stack Overflow, AndroidHive, And Another."
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	
+	<TextView  
+		android:text="@string/notes"
+		android:layout_marginTop="10dp"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	
+	<TextView 
+		android:paddingLeft="5sp"
+		android:textStyle="italic"
+		android:text="Aplikasi ini masih BETA, sehingga belum banyak kata yang dimasukkan, mohon untuk melaporkan kata apa saja yang belum ada di kamus ini melalui E-mail. Terimakasih."
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	
+</LinearLayout>
